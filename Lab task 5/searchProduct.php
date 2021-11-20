@@ -2,8 +2,6 @@
 
 require_once 'controller/productInfoController.php';
 
-$products = fetchSearchedProduct($_POST['name']);
-
 if (isset($_POST['name'])) {
     $products = fetchSearchedProduct($_POST['name']);
 } else {

@@ -10,16 +10,15 @@
 </head>
 
 <body>
-    <?php include 'Header.php'; ?>
-
-    <span style="display:inline-block; width:100%;text-align:center; height: 50%; padding:10px">
+    <div class="fotter">
+    <hr>
+    <span style="text-align:center;color: white;">
         <?php
-        echo "<h2>Welcome to Transport Management</h2>";
-        echo '<img src="Logos/Public_Home_Logo.jpg" alt="Public Home Logo" width="50%" height="100%">'
+        echo "<p>Copyright &copy; 2021</p>";
         ?>
     </span>
-
-    <?php include 'Footer.php'; ?>
+    <hr>
+    </div>
 </body>
 
 </html>
