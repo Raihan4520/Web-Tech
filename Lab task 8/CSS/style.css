@@ -1,0 +1,377 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: DarkSlateBlue;
+  background-image: url(../Pictures/backgroundImageDesktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-size: large;
+}
+
+div.header {
+  /* background-color: DarkOrchid; */
+  background-image: url(../Pictures/backgroundImageDesktop.png);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  border-bottom: 3px solid Indigo;
+  box-shadow: 1px 1px 12px;
+}
+
+div.fotter {
+  background-color: DarkSlateBlue;
+  border-top: 3px solid Indigo;
+  border-bottom: 3px solid Indigo;
+  box-shadow: 1px 1px 12px;
+}
+
+a {
+  background-color: DarkSlateBlue;
+  padding: 3px;
+  text-decoration: none;
+  font-style: italic;
+  color: lavender;
+  border: 3px solid Indigo;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 2px 2px 15px;
+}
+
+a:hover {
+  color: violet;
+}
+
+a:active {
+  color: DeepPink;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: "Praise", cursive;
+  text-transform: uppercase;
+  text-shadow: 2px 2px;
+  font-size: 30px;
+}
+
+h2 {
+  color: lavenderblush;
+  font-family: "Praise", cursive;
+  text-transform: uppercase;
+  text-shadow: 2px 2px;
+  font-size: 30px;
+}
+
+label {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Praise", cursive;
+  font-size: 18px;
+  font-style: italic;
+  /* color: whitesmoke; */
+}
+
+input[type="submit"] {
+  margin: 10px;
+  width: 150px;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Praise", cursive;
+  border-radius: 100px;
+  border: 5px solid purple;
+  background-color: purple;
+}
+
+input[type="reset"] {
+  margin: 10px;
+  width: 200px;
+  color: white;
+  padding: 1px;
+  font-size: 15px;
+  font-family: "Praise", cursive;
+  border-radius: 100px;
+  border: 5px solid purple;
+  background-color: purple;
+}
+
+input[type="text"] {
+  padding: 3px 3px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid purple;
+  text-align: center;
+}
+
+input[type="password"] {
+  padding: 3px 3px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid purple;
+  text-align: center;
+}
+
+input[type="date"] {
+  padding: 3px 3px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid purple;
+  text-align: center;
+}
+
+div.logout {
+  text-align: center;
+}
+
+div.log-main {
+  text-shadow: 10px;
+  padding: 100px;
+  font-family: "Praise", cursive;
+}
+
+div.login {
+  width: 100%;
+  height: 500px;
+  text-decoration-style: solid;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 5px solid rgb(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 15px;
+  /* color: black; */
+}
+
+div.reg-main {
+  text-shadow: 10px;
+  padding: 100px;
+  font-family: "Praise", cursive;
+}
+
+div.reg {
+  height: 900px;
+  text-decoration-style: solid;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 5px solid rgb(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 15px;
+  /* color: black; */
+}
+
+div.fog {
+  margin: 150px;
+  padding: 70px;
+  text-align: center;
+  border: 5px solid rgb(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 15px;
+  border-radius: 100px;
+}
+
+div.home {
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+}
+
+input#name {
+  width: 3px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.C_Menu {
+  margin: 0px;
+  padding: 0px;
+  height: 300px;
+  width: 400px;
+}
+
+div.image {
+  padding: 50px;
+  margin: 50px;
+  border: 4px solid purple;
+  box-shadow: 4px 2px 18px;
+  border-radius: 5000px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  /* padding: 0px; */
+  height: 50%;
+}
+
+table,
+th,
+td {
+  border: 3px solid Indigo;
+  border-collapse: collapse;
+  padding: 12px;
+  text-align: center;
+  border-style: solid;
+  color: whitesmoke;
+}
+
+tr:hover {
+  background-color: DarkOrchid;
+}
+
+.tableStyle {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border: 4px solid purple;
+  box-shadow: 4px 2px 18px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../Pictures/backgroundImagePhone.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: small;
+  }
+
+  a {
+    padding: 2px;
+    border: 2px solid purple;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px;
+    font-size: x-small;
+  }
+
+  h1 {
+    text-shadow: 1px 1px;
+    font-size: medium;
+  }
+
+  h2 {
+    text-shadow: 1px 1px;
+    font-size: medium;
+  }
+
+  label {
+    margin: 5px;
+    padding: 5px;
+    font-size: small;
+  }
+
+  input[type="submit"] {
+    margin: 5px;
+    width: 60px;
+    padding: 2px;
+    font-size: x-small;
+    border-radius: 50px;
+    border: 3px solid purple;
+  }
+
+  input[type="reset"] {
+    margin: 5px;
+    width: 60px;
+    padding: 0px;
+    font-size: x-small;
+    border-radius: 50px;
+    border: 3px solid purple;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    padding: 0px 0px;
+    border-radius: 50px;
+    font-size: x-small;
+  }
+
+  input[type="password"] {
+    width: 80px;
+    padding: 0px 0px;
+    border-radius: 50px;
+    font-size: x-small;
+  }
+
+  input[type="date"] {
+    width: 80px;
+    padding: 0px 0px;
+    border-radius: 50px;
+    font-size: x-small;
+  }
+
+  input[type="file"] {
+    font-size: x-small;
+  }
+
+  div.log-main {
+    text-shadow: 5px;
+    padding: 50px;
+  }
+
+  div.login {
+    border-radius: 35px;
+    font-size: small;
+    box-shadow: 1px 1px 10px;
+    height: 300px;
+  }
+
+  div.reg-main {
+    text-shadow: 5px;
+    padding: 20px;
+    font-family: "Praise", cursive;
+  }
+
+  div.reg {
+    height: 400px;
+    font-size: small;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px;
+  }
+
+  div.fog {
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 1px 1px 10px;
+    border-radius: 50px;
+  }
+
+  .C_Menu {
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+    width: 300px;
+  }
+
+  div.image {
+    padding: 30px;
+    margin: 60px;
+    border: 2px solid purple;
+    box-shadow: 4px 2px 18px;
+    border-radius: 50000px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid purple;
+    padding: 1px;
+  }
+}
