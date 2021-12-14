@@ -47,10 +47,10 @@
             <h2>DELETE_INFO</h2>
             <br>
             <label>Plane Id: </label>
-            <input type="text" name="PlaneId"><span class="red">
+            <input type="text" name="planeId"><span class="red">
                 <?php
-                if ($PlaneIdErr) {
-                    echo $PlaneIdErr;
+                if ($planeIdErr) {
+                    echo $planeIdErr;
                 }
                 ?></span>
             

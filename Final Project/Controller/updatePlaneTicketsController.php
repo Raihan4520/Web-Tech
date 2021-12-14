@@ -8,8 +8,8 @@ if(!isset($_SESSION))
         session_start(); 
     } 
 
-$ticketId = $PlaneId  = $from = $to = $price = $date = $time = '';
-$msg = $PlaneIdErr = $ticketIdErr  = $fromErr = $toErr = '';
+$ticketId = $planeId  = $from = $to = $price = $date = $time = '';
+$msg = $planeIdErr = $ticketIdErr  = $fromErr = $toErr = '';
 $valid = 1;
 
 if (isset($_POST['search'])) {
@@ -35,23 +35,23 @@ if (isset($_POST['search'])) {
     $price = $row["price"];
     $date = $row["date"];
     $time = $row["time"];
-    $PlaneId = $row["p_id"];
+    $planeId = $row["p_id"];
     
 }
 
 if (isset($_POST['submit'])) {
 
-if (empty($_POST["PlaneId"])) {
-        $PlaneIdErr = "*Please enter Plane ID";
+if (empty($_POST["planeId"])) {
+        $planeIdErr = "*Please enter Plane ID";
         $valid = 0;
     }
    
-    if (empty($_POST["PlaneFrom"])) {
+    if (empty($_POST["planeFrom"])) {
         $fromErr = "*Please select a location";
         $valid = 0;
     }
 
-    if (empty($_POST["PlaneTo"])) {
+    if (empty($_POST["planeTo"])) {
         $toErr = "*Please select a location";
         $valid = 0;
     }

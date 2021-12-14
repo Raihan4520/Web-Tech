@@ -10,12 +10,12 @@ $valid = 1;
 if (isset($_POST["submit"])) {
     
 
-    if (empty($_POST["PlaneFrom"])) {
+    if (empty($_POST["planeFrom"])) {
         $fromErr = "*Please select a location";
         $valid = 0;
     }
 
-    if (empty($_POST["PlaneTo"])) {
+    if (empty($_POST["planeTo"])) {
         $toErr = "*Please select a location";
         $valid = 0;
     }

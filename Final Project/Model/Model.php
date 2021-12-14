@@ -126,9 +126,10 @@ function addBusManager($data)
     } catch (PDOException $e) {
         echo $e->getMessage();
 
+        
+    }
         $conn = null;
         return '<span class="green">Registered successfully</span>';
-    }
 }
 
 function addBus($data)
@@ -144,9 +145,10 @@ function addBus($data)
     } catch (PDOException $e) {
         echo $e->getMessage();
 
+    }
+
         $conn = null;
         return '<span class="green">Bus added successfully</span>';
-    }
 }
 
 function updateBus($data)
@@ -199,13 +201,15 @@ function addBusTicket($data)
             ':price'                 =>        test_input($data["price"]),
             ':tType'                 =>        "Bus",
             ':bookedBy'              =>        "",
+            ':busId'                 =>        test_input($data["busId"])
         ]);
     } catch (PDOException $e) {
         echo $e->getMessage();
 
+    }
+    
         $conn = null;
         return '<span class="green">Ticket added successfully</span>';
-    }
 }
 
 function deletebustickes($ticketId)
@@ -321,14 +325,14 @@ function addPlaneTicket($data)
     try {
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-            ':PlaneTo'                 =>        test_input($data["PlaneTo"]),
-            ':PlaneFrom'               =>        test_input($data["PlaneFrom"]),
+            ':PlaneTo'                 =>        test_input($data["planeTo"]),
+            ':PlaneFrom'               =>        test_input($data["planeFrom"]),
             ':date'                  =>        test_input($data["date"]),
             ':time'                  =>        test_input($data["time"]),
             ':price'                 =>        test_input($data["price"]),
-            ':tType'                 =>        "Plane",
+            ':pType'                 =>        "Plane",
             ':bookedBy'              =>        "",
-            ':PlaneId'                 =>        test_input($data["PlaneId"])
+            ':PlaneId'                 =>        test_input($data["planeId"])
         ]);
     } catch (PDOException $e) {
         echo $e->getMessage();
@@ -360,7 +364,7 @@ function updatePlaneTicket($data, $ticketId)
     try {
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-            test_input($data['PlaneFrom']), test_input($data['PlaneTo']), test_input($data['date']), test_input($data['time']), test_input($data['price']), test_input($data['PlaneId']),  test_input($data['ticketId'])
+            test_input($data['planeFrom']), test_input($data['planeTo']), test_input($data['date']), test_input($data['time']), test_input($data['price']), test_input($data['planeId']),  test_input($data['ticketId'])
         ]);
     } catch (PDOException $e) {
         echo $e->getMessage();

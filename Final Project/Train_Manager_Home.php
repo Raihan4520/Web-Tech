@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Mid Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: hotpink;
+  border: solid 1px purple;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
 </head>
 
 <body>
@@ -26,17 +47,26 @@
             echo '<h2>********WELCOME TRAIN MANAGERS*********</h2>';
             echo '<ul>';
             echo '<br>';
-            echo '<li><a href="Add_Train.php">Add Train</a></li>';
             echo '<br>';
-            echo '<li><a href="Update_Train.php">Update Train</a></li>';
+            echo '<div id="flip">Click to show/hide menu</div>';
+            echo '<div id="panel">';
+            echo '<a href="Add_Train.php">Add Train</a>';
             echo '<br>';
-            echo '<li><a href="Remove_Train.php">Remove Train</a></li>';
             echo '<br>';
-            echo '<li><a href="Add_Train_Tickets.php">Add Train Tickets</a></li>';
+            echo '<a href="Update_Train.php">Update Train</a>';
             echo '<br>';
-            echo '<li><a href="Update_Train_Tickets.php">Update Train Tickets</a></li>';
             echo '<br>';
-            echo '<li><a href="Delete_Train_Tickets.php">Delete Train Tickets</a></li>';
+            echo '<a href="Remove_Train.php">Remove Train</a>';
+            echo '<br>';
+            echo '<br>';
+            echo '<a href="Add_Train_Tickets.php">Add Train Tickets</a>';
+            echo '<br>';
+            echo '<br>';
+            echo '<a href="Update_Train_Tickets.php">Update Train Tickets</a>';
+            echo '<br>';
+            echo '<br>';
+            echo '<a href="Delete_Train_Tickets.php">Delete Train Tickets</a>';
+            echo '</div>';
 
 
 

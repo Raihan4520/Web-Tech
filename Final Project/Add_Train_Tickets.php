@@ -1,75 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <title>Mid Project</title>
+    <title>Add Train Ticket</title>
     <script src="JS/Form_Validation.js"></script>
-    <script>
-        function searchTicketFrom(str) {
-            if (str == "") {
-                document.getElementById("trainFrom").innerHTML = "";
-                return;
-            }
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                document.getElementById("displayTicket").innerHTML = this.responseText;
-            }
-            xhttp.open("POST", "Controller/searchTrainTicketController.php", true);
-            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send("q=" + str);
+    <style type="text/css">
+
+        .red {
+            color: red;
         }
 
-        function searchTicketTo(str) {
-            if (str == "") {
-                document.getElementById("trainTo").innerHTML = "";
-                return;
-            }
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function() {
-                document.getElementById("displayTicket").innerHTML = this.responseText;
-            }
-            xhttp.open("POST", "Controller/searchTrainTicketController.php", true);
-            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send("s=" + str);
+        .green {
+            color: green;
         }
-    </script>
+    </style>
 </head>
 
 <body>
+    <?php require_once 'Controller/addTrainTicketsController.php'; ?>
+
+    <?php include 'Header.php'; ?>
+
     <?php
-    session_start();
-    include 'Header.php';
     if (!isset($_SESSION['email'])) {
         header("location:Login.php");
     }
     ?>
 
-    <?php require_once 'Controller/addTrainTicketsController.php'; ?>
-
     <form method="post">
-
+        <?php
+        $priceErr = '';
+        if (isset($error)) {
+            echo $error;
+        }
+        ?>
         <br>
-        <label style='color:whitesmoke'>Go back to :</label><a href="Train_Manager_Home.php">Home</a><br><br>
+         <label>Go back to :</label>
+         <a href="Train_Manager_Home.php">Home</a><br><br>
+       <div class="ticadd"style="height:550px;
+        text-align: center;
+        padding: 30px;
+        margin-left: 300px;
+        border-radius: 50px;
+        border: 5px solid rgb(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 15px;
+        color: black;
+        width: 50%;">
         <h2>ADD TICKETS FOR TRAIN</h2>
 
-        <br>
+            <br>
 
-        <label>Train Id: </label>
-        <input type="text" name="trainId"><span class="red">
-            <?php
-            if ($trainIdErr) {
-                echo $trainIdErr;
-            }
-            ?></span>
-        <br><br>
-        <label style='color:whitesmoke'>SEARCH TICKET:</label><br>
-        <label style='color:whitesmoke'>From: </label>
-        <select name="trainFrom" id="trainFrom" onchange="searchTicketFrom(this.value)">
-            <select name="trainFrom" id="trainFrom" onblur="validTrainFrom()" onkeyup="validTrainFrom()">
+                <label style='color:whitesmoke'>Train Id: </label>
+                    <input type="text" name="trainId" id="trainId" onblur="checktrainId()" onkeyup="checktrainId()">
+                    <br>
+                    <span class="red">
+                        <p id="trainIdErr">
+                            <?php
+                            if ($trainIdErr) {
+                                echo $trainIdErr;
+                            }
+                            ?>
+                        </p>
+                    </span>
+                    <br>
+            <label>From: </label>
+            <select name="trainFrom">
                 <option value="" disabled selected>Select a location</option>
                 <option value="Dhaka">Dhaka</option>
                 <option value="Barishal">Barishal</option>
@@ -78,74 +73,77 @@
                 <option value="Bagura">Bagura</option>
                 <option value="khulna">khulna</option>
                 <option value="Chittagong">Chittagong</option>
-            </select>
-            <br>
-            <span class="red">
-                <p id="trainFrom">
-                    <?php
-                    if ($fromErr) {
-                        echo $fromErr;
-                    }
-                    ?>
-                </p>
-            </span>
-            <br><br>
-
-            <label style='color:whitesmoke'>To: </label>
-            <select name="trainTo" id="trainTo" onchange="searchTicketTo(this.value)">
-                <select name="trainTo" id="trainTo" onblur="validTrainTo()" onkeyup="validTrainTo()">
-                    <option value="" disabled selected>Select a location</option>
-                    <option value="Dhaka">Dhaka</option>
-                    <option value="Barishal">Barishal</option>
-                    <option value="Cumilla">Cumilla</option>
-                    <option value="Sylet">Sylet</option>
-                    <option value="Bagura">Bagura</option>
-                    <option value="khulna">khulna</option>
-                    <option value="Chittagong">Chittagong</option>
-                </select>
-                <br>
-                <span class="red">
-                    <p id="trainTo">
-                        <?php
-                        if ($toErr) {
-                            echo $toErr;
-                        }
-                        ?>
-                    </p>
-                </span>
-
-                <br><br>
-                <label>Price: </label>
-                <input type="text" name="price" /><br />
-
-
-                <br><br>
-
-                <label>Date: </label>
-
-                <input type="Date" name="date" /> (mm/dd/yyyy)<br />
-                <br>
-
-                <label>Time: </label>
-
-                <input type="time" name="time" /> (mm:ss am/pm)<br />
-
-                <br>
-                <input type="submit" name="submit" value="Submit" class="btn btn-info" />
-
-                <input type="reset" name="reset" value="Reset" class="btn btn-info" /><br />
-                </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <br />
+            </select><span class="red">
                 <?php
-                if (isset($msg)) {
-                    echo $msg;
+                if ($fromErr) {
+                    echo $fromErr;
                 }
-                ?>
+                ?></span>
+        <br><br>
 
-                <?php include 'Footer.php'; ?>
+            <label>To: </label>
+            <select name="trainTo">
+                <option value="" disabled selected>Select a location</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Cumilla">Cumilla</option>
+                <option value="Sylet">Sylet</option>
+                <option value="Bagura">Bagura</option>
+                <option value="khulna">khulna</option>
+                <option value="Chittagong">Chittagong</option>
+            </select><span class="red">
+                <?php
+                if ($toErr) {
+                    echo $toErr;
+                }
+                ?></span>
+            
+<br><br>
+
+     <label style='color:whitesmoke'>Price: </label>
+                    <input type="text" name="price" id="price" onblur="checkprice()" onkeyup="checkprice()">
+                    <br>
+                    <span class="red">
+                        <p id="priceErr">
+                            <?php
+                            if ($priceErr) {
+                                echo $priceErr;
+                            }
+                            ?>
+                        </p>
+                    </span>
+                    <br>
+  <!--           <label>Price: </label>
+            <input type="text" name="price" /><br />
+         -->
+
+         <br><br>
+               
+                    <label>Date: </label>
+                
+                <input type="Date" name="date" /> (mm/dd/yyyy)<br />
+<br>
+            
+                    <label>Time: </label>
+         
+                <input type="time" name="time" /> (mm:ss am/pm)<br />
+            
+                <br>
+            <input type="submit" name="submit" value="Submit" class="btn btn-info" />
+            
+            <input type="reset" name="reset" value="Reset" class="btn btn-info" /><br />
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br />
+        <?php
+        if (isset($msg)) {
+            echo $msg;
+        }
+        ?>
+
+        <?php include 'Footer.php'; ?>
     </form>
-
+    
     <br />
 
 </body>

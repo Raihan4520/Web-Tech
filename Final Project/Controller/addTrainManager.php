@@ -2,8 +2,6 @@
 
 require_once 'Model/Model.php';
 
-session_start();
-
 if (isset($_POST["submit"]) && $_POST["transportType"] == "Train") {
     if (empty($_POST["email"])) {
         $emailErr = "*Please enter your email address";
