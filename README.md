@@ -458,14 +458,10 @@ The final project folder includes the source code for a web application develope
 ## How to Run
 
 1. Clone the repository:
-```bash
-git clone https://github.com/Raihan4520/Web-Tech.git
-```
-
+   ```bash
+   git clone https://github.com/Raihan4520/Web-Tech.git
 2. Open the lab files or final project in a browser for client-side code (HTML, CSS, JS).
-
 3. For PHP-based labs or the final project, ensure you have a local server environment such as XAMPP or WAMP. Place the files in the `htdocs` directory and run the server.
-
 4. For database interactions, import the `.sql` files into your MySQL server.
 
 ## Contact
