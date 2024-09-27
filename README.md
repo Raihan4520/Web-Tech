@@ -29,6 +29,7 @@ The following technologies and tools were used throughout the course:
 ```bash
 .
 └── Web-Tech
+    ├── File Structure of Final Project.png
     ├── Final Project
     │   ├── Add_Bus.php
     │   ├── Add_Bus_Tickets.php
@@ -379,66 +380,67 @@ The following technologies and tools were used throughout the course:
     │   ├── View_Booked_Tickets.php
     │   ├── View_Profile.php
     │   └── customer_db.sql
-    └── Lab task 9
-        ├── Book_Bus_Tickets.php
-        ├── Book_Plane_Tickets.php
-        ├── Book_Train_Tickets.php
-        ├── CSS
-        │   └── style.css
-        ├── Cancel_Booked_Tickets.php
-        ├── Change_Password.php
-        ├── Change_Profile_Picture.php
-        ├── Controller
-        │   ├── EditProfileController.php
-        │   ├── addCustomerController.php
-        │   ├── bookBusTicketController.php
-        │   ├── bookPlaneTicketController.php
-        │   ├── bookTrainTicketController.php
-        │   ├── cancelBookedTicketsController.php
-        │   ├── changePasswordController.php
-        │   ├── checkAvailableEmailController.php
-        │   ├── searchBusTicketController.php
-        │   ├── searchPlaneTicketController.php
-        │   ├── searchTrainTicketController.php
-        │   ├── showBookedBusTicketsController.php
-        │   ├── showBookedPlaneTicketsController.php
-        │   ├── showBookedTrainTicketsController.php
-        │   └── uploadPicController.php
-        ├── Customer_Home.php
-        ├── Customer_Menu.php
-        ├── Customer_Top_Menu_Bar.php
-        ├── Edit_Profile.php
-        ├── Footer.php
-        ├── Forget_Password.php
-        ├── Header.php
-        ├── JS
-        │   └── Form_Validation.js
-        ├── Login.php
-        ├── Logout.php
-        ├── Model
-        │   ├── Model.php
-        │   └── db_connect.php
-        ├── Pictures
-        │   ├── 1.jpg
-        │   ├── 2.jpg
-        │   ├── 3.jpg
-        │   ├── backgroundImageDesktop.png
-        │   └── backgroundImagePhone.png
-        ├── Public_Home.php
-        ├── Registration.php
-        ├── Screenshots
-        │   ├── 1.png
-        │   ├── 2.png
-        │   └── 3.png
-        ├── Uploads
-        │   ├── Dummy.png
-        │   ├── Pic_1.jpg
-        │   └── Pic_2.JPEG
-        ├── View_Booked_Tickets.php
-        ├── View_Profile.php
-        └── transportManagement_db.sql
+    ├── Lab task 9
+    │   ├── Book_Bus_Tickets.php
+    │   ├── Book_Plane_Tickets.php
+    │   ├── Book_Train_Tickets.php
+    │   ├── CSS
+    │   │   └── style.css
+    │   ├── Cancel_Booked_Tickets.php
+    │   ├── Change_Password.php
+    │   ├── Change_Profile_Picture.php
+    │   ├── Controller
+    │   │   ├── EditProfileController.php
+    │   │   ├── addCustomerController.php
+    │   │   ├── bookBusTicketController.php
+    │   │   ├── bookPlaneTicketController.php
+    │   │   ├── bookTrainTicketController.php
+    │   │   ├── cancelBookedTicketsController.php
+    │   │   ├── changePasswordController.php
+    │   │   ├── checkAvailableEmailController.php
+    │   │   ├── searchBusTicketController.php
+    │   │   ├── searchPlaneTicketController.php
+    │   │   ├── searchTrainTicketController.php
+    │   │   ├── showBookedBusTicketsController.php
+    │   │   ├── showBookedPlaneTicketsController.php
+    │   │   ├── showBookedTrainTicketsController.php
+    │   │   └── uploadPicController.php
+    │   ├── Customer_Home.php
+    │   ├── Customer_Menu.php
+    │   ├── Customer_Top_Menu_Bar.php
+    │   ├── Edit_Profile.php
+    │   ├── Footer.php
+    │   ├── Forget_Password.php
+    │   ├── Header.php
+    │   ├── JS
+    │   │   └── Form_Validation.js
+    │   ├── Login.php
+    │   ├── Logout.php
+    │   ├── Model
+    │   │   ├── Model.php
+    │   │   └── db_connect.php
+    │   ├── Pictures
+    │   │   ├── 1.jpg
+    │   │   ├── 2.jpg
+    │   │   ├── 3.jpg
+    │   │   ├── backgroundImageDesktop.png
+    │   │   └── backgroundImagePhone.png
+    │   ├── Public_Home.php
+    │   ├── Registration.php
+    │   ├── Screenshots
+    │   │   ├── 1.png
+    │   │   ├── 2.png
+    │   │   └── 3.png
+    │   ├── Uploads
+    │   │   ├── Dummy.png
+    │   │   ├── Pic_1.jpg
+    │   │   └── Pic_2.JPEG
+    │   ├── View_Booked_Tickets.php
+    │   ├── View_Profile.php
+    │   └── transportManagement_db.sql
+    └── README.md
 
-50 directories, 360 files
+50 directories, 362 files
 ```
 </details>
 
