@@ -444,9 +444,6 @@ The following technologies and tools were used throughout the course:
 ```
 </details>
 
-## Final Project Repository Structure
-![File Structure of Final Project](./File%20Structure%20of%20Final%20Project.png)
-
 ### Labs
 
 Each lab task folder contains the code and files associated with that particular lab assignment. Labs range from basic HTML structuring to complex server-side interactions using PHP and MySQL.
@@ -454,6 +451,9 @@ Each lab task folder contains the code and files associated with that particular
 ### Final Project
 
 The final project folder includes the source code for a web application developed as the course's capstone project. It demonstrates the integration of front-end, back-end, and database management skills learned throughout the course.
+
+#### Repository Structure of Final Project
+![File Structure of Final Project](./File%20Structure%20of%20Final%20Project.png)
 
 ## How to Run
 
