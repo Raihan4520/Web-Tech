@@ -21,6 +21,13 @@ The following technologies and tools were used throughout the course:
 - **jQuery**: For simplifying JavaScript operations.
 - **AJAX**: For asynchronous requests and dynamic updates without page reloads.
 
+## Final Project Repository Structure
+
+![File Structure of Final Project](./File\ Structure\ of\ Final\ Project.png)
+
+![File Structure of Final Project](./File Structure of Final Project.png)
+
+
 ## Repository Structure
 
 <details>
