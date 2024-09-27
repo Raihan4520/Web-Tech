@@ -29,7 +29,6 @@ The following technologies and tools were used throughout the course:
 ```bash
 .
 └── Web-Tech
-    ├── File Structure of Final Project.png
     ├── Final Project
     │   ├── Add_Bus.php
     │   ├── Add_Bus_Tickets.php
@@ -438,7 +437,8 @@ The following technologies and tools were used throughout the course:
     │   ├── View_Booked_Tickets.php
     │   ├── View_Profile.php
     │   └── transportManagement_db.sql
-    └── README.md
+    ├── README.md
+    └── Repository Structure of Final Project.png
 
 50 directories, 362 files
 ```
@@ -453,7 +453,7 @@ Each lab task folder contains the code and files associated with that particular
 The final project folder includes the source code for a web application developed as the course's capstone project. It demonstrates the integration of front-end, back-end, and database management skills learned throughout the course.
 
 #### Repository Structure of Final Project
-![File Structure of Final Project](./File%20Structure%20of%20Final%20Project.png)
+![Repository Structure of Final Project](./Repository%20Structure%20of%20Final%20Project.png)
 
 ## How to Run
 
