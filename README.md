@@ -9,6 +9,10 @@ The course covered a range of web development technologies, providing both theor
 1. **Lab Assignments**: Practical tasks designed to help understand key web technologies and development practices.
 2. **Final Project**: A culmination of the skills acquired during the course, involving the development of a fully functional web application.
 
+### Course Information
+For more details on the course, refer to the [AIUB Undergraduate Course Catalog](https://www.aiub.edu/faculties/fst/ug-course-catalog).  
+*Note: Search for "Web Technologies" for specific course information.*
+
 ### Technologies Covered
 
 The following technologies and tools were used throughout the course:
