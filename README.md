@@ -1,6 +1,6 @@
 # Web Technology Course - Lab Tasks & Final Project
 
-This repository contains the lab assignments and final project from my **Web Technology** course, taken during my undergraduate studies at the **American International University - Bangladesh (AIUB)**.
+This repository contains the lab assignments and final project from my **Web Technology** course, taken during my undergraduate studies at **American International University - Bangladesh (AIUB)**.
 
 ### Course Information
 For more details on the course, refer to the [AIUB Undergraduate Course Catalog](https://www.aiub.edu/faculties/fst/ug-course-catalog).  
