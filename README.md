@@ -2,16 +2,16 @@
 
 This repository contains the lab assignments and final project from my **Web Technology** course, taken during my undergraduate studies at the **American International University - Bangladesh (AIUB)**.
 
+### Course Information
+For more details on the course, refer to the [AIUB Undergraduate Course Catalog](https://www.aiub.edu/faculties/fst/ug-course-catalog).  
+*Note: Search for "Web Technologies" for specific course information.*
+
 ## Overview
 
 The course covered a range of web development technologies, providing both theoretical knowledge and practical experience. The repository is divided into two main sections:
 
 1. **Lab Assignments**: Practical tasks designed to help understand key web technologies and development practices.
 2. **Final Project**: A culmination of the skills acquired during the course, involving the development of a fully functional web application.
-
-### Course Information
-For more details on the course, refer to the [AIUB Undergraduate Course Catalog](https://www.aiub.edu/faculties/fst/ug-course-catalog).  
-*Note: Search for "Web Technologies" for specific course information.*
 
 ### Technologies Covered
 
