@@ -13,9 +13,10 @@ The course covered a range of web development technologies, providing both theor
 1. **Lab Assignments**: Practical tasks designed to help understand key web technologies and development practices.
 2. **Final Project**: A culmination of the skills acquired during the course, involving the development of a fully functional web application.
 
-### Technologies Covered
+## Technologies Covered
 
 The following technologies and tools were used throughout the course:
+
 - **HTML5**: For structuring content on the web.
 - **CSS3**: For styling and layout design.
 - **JavaScript**: For client-side scripting and interactive elements.
@@ -24,6 +25,7 @@ The following technologies and tools were used throughout the course:
 - **Bootstrap**: For responsive design and rapid UI development.
 - **jQuery**: For simplifying JavaScript operations.
 - **AJAX**: For asynchronous requests and dynamic updates without page reloads.
+- **Media Queries**: For responsive design, adapting layouts to desktop and mobile screens.
 
 ## Repository Structure
 
